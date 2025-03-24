@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00c6ff;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .welcome-message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            padding: 10px;
+            width: 250px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .search-box button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0072ff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-box button:hover {
+            background-color: #005bb5;
+        }
+
+        .weather-info img {
+            width: 100px;
+            margin-top: 10px;
+        }
+
+        .weather-info {
+            margin-top: 20px;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #00c6ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="w1.html">City 1</a></li>
+                <li><a href="w2.html">City 2</a></li>
+                <li><a href="w3.html">City 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="bg1.jpg" alt="Background Image" class="background-image">
+    <div class="container">
+        <div class="welcome-message">
+            <h1>Welcome to the Weather App</h1>
+            <p>Get the latest weather updates for your city</p>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name...">
+            <a href="w1.html"><button>Search</button></a>
+        </div>
+        <div class="weather-info">
+            <h2>City Name</h2>
+            <!-- <img src="bg3.webp" alt="Weather Icon">  -->
+        </div>
+    </div>
+    <footer>
+        <div class="contact-info">
+            <p>Contact us at: <a href="mailto:info@weatherapp.com">info@weatherapp.com</a></p>
+            <p>Follow us on:
+                <a href="https://twitter.com/weatherapp" target="_blank">Twitter</a>,
+                <a href="https://facebook.com/weatherapp" target="_blank">Facebook</a>,
+                <a href="https://instagram.com/weatherapp" target="_blank">Instagram</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
